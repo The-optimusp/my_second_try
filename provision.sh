@@ -13,3 +13,7 @@ usermod -aG docker vagrant
 # hostnamectl --transient --pretty --static set-hostname docker
 yum update -y
 
+## Import and build mongodb 
+
+docker pull mongo:latest
+docker build -t my_mongo 
